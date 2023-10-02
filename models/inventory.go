@@ -7,7 +7,8 @@ type Inventory struct {
 	Name        string `json:"name"`
 	Description string `json:"description"`
 	Archive     Archive
-	Employees   []EmployeeInventory `json:"employees"`
+	// Employees   []*Employee `gorm:"many2many:employee_inventories;"` // ini digunakan untuk membuat otomatis table Many2Many
+	Employees []EmployeeInventory `json:"employees"`
 }
 
 type RequestInventory struct {

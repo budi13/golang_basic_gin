@@ -25,7 +25,7 @@ func InitDB() {
 	// Migrate the table
 	// DB.AutoMigrate(&models.Inventory{}, &models.Archive{})
 	DB.AutoMigrate(&models.Department{}, &models.Position{}, &models.Employee{},
-		&models.Inventory{}, &models.Archive{}, &models.EmployeeInventory{})
+		&models.Inventory{}, &models.Archive{}, &models.EmployeeInventory{}, &models.User{})
 
 	// DB.Create(&models.Department{
 	// 	Name: "Human resource",
